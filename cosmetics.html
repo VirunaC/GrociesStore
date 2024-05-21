@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cosmetics.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <!--Name of the business is Gourmet Oasis/ Elevate Your Shopping Experience-->
+        <div class="navMain">
+            <nav>
+                <h1 class="navLogo"><a href="">Grocies<span>Supermarket</span></a></h1>
+                <input type="checkbox" id="menuToggle">
+                <ul class="navbar">
+                    <label for="menuToggle" class="menu-icon">&#9776;</label>
+                    <div class="dropdown">
+                        <li><a href="cosmetics.html">Cosmetics</a></li>
+                        <li><a href="dairy.html">Dairy</a></li>
+                        <li><a href="vegetables.html">Vegetables</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </div>
+                </ul>
+                <button type="button" onclick="window.location.href='loyaltyReg.html'">Loyalty Program</button>
+            </nav>
+        </div>
+        <div class="search-wrap">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="image-slider">
+            <input type="radio" id="slide1" name="slider" checked>
+            <input type="radio" id="slide2" name="slider">
+            
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/Cosmetics banner 2.png" alt="Banner cosmetics 1">
+                </div>
+                <div class="slide">
+                    <img src="images/Cosmetics banner 1.png" alt="Banner cosmetics 2">
+                </div>
+            </div>
+            <br>
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="highlight">Lip Stick</td>
+                        <td class="highlight"><img src="images/lip stick.png" alt=""></td>
+                        <td class="highlight">Rs. 5000</td>
+                    </tr>
+                    <tr>
+                        <td>Face Wash</td>
+                        <td><img src="images/facewash.png" alt=""></td>
+                        <td>Rs. 5000</td>
+                    </tr>
+                    <tr>
+                        <td>Lip Balm</td>
+                        <td><img src="images/lip balm.png" alt=""></td>
+                        <td>Rs. 2500</td>
+                    </tr>
+                    <tr>
+                        <td>Moisturiser</td>
+                        <td><img src="images/moisturiser.png" alt=""></td>
+                        <td>Rs. 3200</td>
+                    </tr>
+                    <tr>
+                        <td>Moisturiser</td>
+                        <td><img src="images/moisturizer.png" alt=""></td>
+                        <td>Rs. 4500</td>
+                    </tr>
+                    <tr>
+                        <td>Sun Block</td>
+                        <td><img src="images/sun block.png" alt=""></td>
+                        <td>Rs. 2800</td>
+                    </tr>
+                </tbody>
+                </tbody>
+            </table>
+            <div class="navigation">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <div>
+            <H4>Customer Care</H4>
+            <ul>
+                <li><a href="loyaltyReg.html">My Account</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <ul>
+                <li>Phone - +94 769696969</li>
+                <li>Main Branch - <a href="#">location link</a></li>
+                <li>Email - <a href="mailto:help@gourmetoasis.com">help@gourmetoasis.com</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,148 @@
+
+/* Styling for the products */
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-rows: (3, auto);
+    justify-items: center;
+}
+
+.gridContainer > div{
+    border: 2px solid #36013F;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #70656393;
+    text-align: center;
+}
+
+.gridContainer > div:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: #FFD700;
+    transform: scale(103%);
+}
+
+.gridContainer img{
+    height: auto;
+    max-width: 100%;
+    background-color: none;
+}
+
+.gridContainer p{
+    margin-top: 10px;
+    font-size: 1.2em;
+    background-color: #36013F;
+}
+
+.gridContainer a{
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #36013F;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.veg1, .veg2, .veg3{
+    grid-row: 1;
+}
+
+.veg4, .veg5, .veg6{
+    grid-row: 2;
+}
+
+.veg7, .veg8, .veg9{
+    grid-row: 3;
+}
+
+/* Styling for the image carousel */
+
+.image-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slides input[type="radio"] {
+    display: none;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.navigation label {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.slides input[type="radio"]:checked ~ .navigation label {
+    background-color: #36013F;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.image-slider {
+    
+}
+
+/* Styling for the Location Info Section */
+
+.sourceInfo{
+    background-color: #36013F;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.sourceInfo h2{
+    margin-bottom: 10px;
+}
+
+.sourceInfo p{
+    margin-bottom: 10px;
+}
+
+.sourceInfo ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sourceInfo ul li{
+    margin-bottom: 10px;
+}
+
+.span2{
+    color: #FFD700;
+}

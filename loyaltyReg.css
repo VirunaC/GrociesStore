@@ -1,0 +1,63 @@
+/* Style for the form*/
+.loyaltyForm{
+    background-color: #70656393;
+    color: #36013F;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.formGroup{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+form button{
+    padding: 10px 20px;
+}
+
+/* Style for the benifit description section */
+
+.loyaltyBenefits{
+    margin-top: 30px;
+    color: #36013F;
+}
+
+.loyaltyBenefit{
+    padding: 20px;
+    background-color: #70656393;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.loyaltyBenefit h3{
+    margin-top: 0;
+}
+
+.loyaltyBenefit p{
+    margin: 10px 0;
+}
+
+.loyaltyBenefit span1{
+    color: brown;
+}
+
+.loyaltyBenefit span2{
+    color: silver;
+}
+
+.loyaltyBenefit span3{
+    color: gold;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="loyaltyReg.css">
+</head>
+<body>
+    <header>
+        <div class="navMain">
+            <nav>
+                <h1 class="navLogo"><a href="">Gourmet <span>Oasis</span></a></h1>
+                <ul class="navbar">
+                    <li><a href="cosmetics.html">Cosmetics</a></li>
+                    <li><a href="dairy.html">Dairy</a></li>
+                    <li><a href="vegetables.html">Vegetables</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <button type="button" onclick="window.location.href='loyaltyReg.html'">Loyalty Program</button>
+            </nav>
+        </div>
+        <div class="search-wrap">
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="" class="loyaltyForm">
+            <div class="formGroup">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="formGroup">
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone" required>
+            </div>
+            <div class="formGroup">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formGroup">
+                <label for="loyalty">Select loyalty scheme:</label>
+                <select id="loyalty" name="loyalty" required>
+                    <option value="">Choose a loyalty scheme:</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="bronze">Bronze</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <section class="loyaltyBenefits">
+            <h2>Loyalty Scheme Benefits</h2>
+            <div class="loyaltyBenefit">
+                <h3><span3>Gold</span3> Scheme</h3>
+                <p>10% discount on all purchases</p>
+                <p>Access to exclusive events</p>
+            </div>
+            <div class="loyaltyBenefit">
+                <h3><span2>Silver</span2> Scheme</h3>
+                <p>5% discount on all purchases</p>
+                <p>Monthly newsletter with recipes and tips</p>
+            </div>
+            <div class="loyaltyBenefit">
+                <h3><span1>Bronze</span1> Scheme</h3>
+                <p>3% discount on all purchases</p>
+                <p>Early access to promotions</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <H4>Customer Care</H4>
+            <ul>
+                <li><a href="loyaltyReg.html">My Account</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact Us</h4>
+            <ul>
+                <li>Phone - +94 769696969</li>
+                <li>Main Branch - location link</li>
+                <li>Email - help@gourmetoasis.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

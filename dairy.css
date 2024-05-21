@@ -1,0 +1,117 @@
+/* Styling for the introduction section */
+
+.intro-section {
+    padding: 20px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    color: #36013F;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    color: #36013F;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Styling for the banner */
+
+.image-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slides input[type="radio"] {
+    display: none;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.navigation label {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.slides input[type="radio"]:checked ~ .navigation label {
+    background-color: #36013F;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling for the products */
+
+.dairy-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #36013F;
+    border-radius: 10px;
+    background-color: #70656393;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.product-name {
+    color: #36013F;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.product-price {
+    color: #36013F;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.product:hover{
+    transform: scale(105%);
+    transition: 0.2s;
+}

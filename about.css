@@ -1,0 +1,92 @@
+/* about us page styling */
+h2{
+    color: #36013F;
+}
+
+.para{
+    color: #36013F;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.branches{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.branch{
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    color: #36013F;
+    border: 2px solid #36013F;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #70656393;
+    box-sizing: border-box;
+}
+
+.branch h3{
+    margin-top: 0;
+}
+
+.branch iframe{
+    width: 60%;
+    padding: 10px 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Table Styles */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #36013f48;
+    align-items: center;
+}
+
+th, td{
+    border: 1px solid #36013F;
+    padding: 8px;
+}
+
+tfoot td{
+    font-style: italic;
+}
+
+
+/* media query for larger screens */
+
+@media screen and(min-width: 768px){
+    .navMain {
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+}
