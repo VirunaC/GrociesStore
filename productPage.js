@@ -93,7 +93,7 @@ function clearCart() {
 // Function to go to the next page
 function nextPage() {
     if (cart.length > 0) {
-        alert('Thank you for your purchase!');
+        alert('Click OK to go to checkout page.');
         localStorage.setItem('cartData', JSON.stringify(cart));
         clearCart();
         window.location.href = 'orderPage.html';
